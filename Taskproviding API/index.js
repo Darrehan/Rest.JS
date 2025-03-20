@@ -9,8 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", async (req, res) => {
   try {
     
-    
-    // response java script variable object.
+  
     const response = await axios.get("https://bored-api.appbrewery.com/random");
     const result = response.data;
     console.log(result);
