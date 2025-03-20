@@ -1,6 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
-// axios for generating server side api requests node npm module
+// axios for generating server side api requests  
 import axios from "axios";
 const app = express();
 const port = 3000;
