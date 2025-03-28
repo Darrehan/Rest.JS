@@ -4,7 +4,7 @@ import express from "express";
 import axios from "axios";
 const app = express();
 const port = 3000;
-// Data Related api
+// Data Related api 
 const API_URL = "https://secrets-api.appbrewery.com";
 const yourUsername = "";
 const yourPassword = "";
@@ -15,7 +15,6 @@ app.get("/", (req, res) => {
 });
 app.get("/noAuth", async (req, res) => {
   try {
-    // here we are assining random routes.
     // the result will be the javascript object.
     const result = await axios.get(API_URL + "/random");
     // it will convert corresponding javascript object into the JSON object
